@@ -119,7 +119,7 @@ if submitted :
 
     fig, ax = plt.subplots()
     plt.rcParams['figure.figsize']=(10, 6)
-    plt.plot(dataset_series['sales'][1412:1502], label='Original Data', color='red')
+    plt.plot(dataset_series['sales'][1412:], label='Original Data', color='red')
     plt.plot(new_data[30:139], label='Model Predictions', color='blue')
     plt.ylabel('sales')
     plt.title('LSTM Model for Time Series Data')
